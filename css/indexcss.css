@@ -1,0 +1,123 @@
+body, html {
+	font-family: 'Baloo Da 2', cursive;
+	background-color: rgb(245, 245, 245);
+	margin: 0;
+	font-size: 100%;
+	font-weight: 400;
+}
+/*NAVBAR*/
+
+.navbar-brand > img {
+	position: center;
+	max-width: 200px;
+}
+
+.buffer {
+	height: 100px;
+}
+
+.nav-link {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #939598!important;
+}
+
+
+
+/*SECCION SOMOS*/
+p {
+	font-weight: 600!important;
+}
+
+.somostitulo {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 300px;
+	min-width: 300px;
+}
+
+.somostitulo > img {
+	width: 100%;
+}
+
+.somosparrafo {
+	min-height: 483px;
+	font-size: 1.2em;
+	padding: 0px;
+	width: 100%;
+}
+
+.titulo1 {
+	grid-area: somostitulo1;
+	background-image: url(content/images/somos1.png);
+}
+
+.titulo2 {
+	grid-area: somostitulo2;
+}
+
+.titulo3 {
+	grid-area: somostitulo3;
+}
+
+.parrafo1 {
+	text-align: center;
+	grid-area: somosparrafo1;
+}
+
+.parrafo2 {
+	background-color: rgb(245, 245, 245);
+	text-align: center;
+	grid-area: somosparrafo2;
+}
+
+.parrafo3 {
+	background-color: rgb(245, 245, 245);
+	text-align: center;
+	align-items: center;
+	grid-area: somosparrafo3;
+}
+
+.somos {
+	grid-area: somos;
+	display: grid;
+	grid-template-columns: (auto);
+	grid-template-rows: repeat(8 1fr);
+	grid-template-areas:
+     "somostitulo1"
+     "somosparrafo1"
+     "somostitulo2"
+     "somosparrafo2"
+     "somostitulo3"
+     "somosparrafo3";
+}
+
+@media (min-width: 600px) {
+	.somos {
+	   grid-template-columns: (1fr 1fr);
+	   grid-template-rows: repeat(2 50vw);
+	   grid-template-areas:
+	     "somostitulo1 somosparrafo1"
+	     "somosparrafo2 somostitulo2"
+	     "somostitulo3 somosparrafo3";
+	}
+	.somosparrafo {
+	min-height: 300px;
+	padding: ;
+}
+
+}
+
+@media (min-width: 1800px) {
+	.somos {
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		grid-template-areas:
+	    	"somostitulo1 somosparrafo1 somostitulo2 somosparrafo2 somostitulo3 somosparrafo3";
+	}
+	.somosparrafo {
+
+	}
+}
+
