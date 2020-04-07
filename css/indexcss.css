@@ -41,17 +41,14 @@ body, html {
 }
 
 .parrafo1 {
-	text-align: center;
 	grid-area: somosparrafo1;
 }
 
 .parrafo2 {
-	text-align: center;
 	grid-area: somosparrafo2;
 }
 
 .parrafo3 {
-	text-align: center;
 	grid-area: somosparrafo3;
 }
 
