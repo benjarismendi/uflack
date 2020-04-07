@@ -27,32 +27,9 @@ body, html {
 
 
 /*SECCION SOMOS*/
-p {
-	font-weight: 600!important;
-}
-
-.somostitulo {
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	min-height: 300px;
-	min-width: 300px;
-}
-
-.somostitulo > img {
-	width: 100%;
-}
-
-.somosparrafo {
-	min-height: 483px;
-	font-size: 1.2em;
-	padding: 0px;
-	width: 100%;
-}
 
 .titulo1 {
 	grid-area: somostitulo1;
-	background-image: url(content/images/somos1.png);
 }
 
 .titulo2 {
@@ -69,58 +46,100 @@ p {
 }
 
 .parrafo2 {
-	background-color: rgb(245, 245, 245);
 	text-align: center;
 	grid-area: somosparrafo2;
 }
 
 .parrafo3 {
-	background-color: rgb(245, 245, 245);
 	text-align: center;
-	align-items: center;
 	grid-area: somosparrafo3;
 }
 
-@media only screen and (max-width: 680px) {
-	.somos {
-		grid-area: somos;
-		display: grid;
-		grid-template-columns: (1fr);
-		grid-template-rows: repeat(8 80vw);
-		grid-template-areas:
-	     "somostitulo1"
-	     "somosparrafo1"
-	     "somostitulo2"
-	     "somosparrafo2"
-	     "somostitulo3"
-	     "somosparrafo3";
-	}
+.somostitulo {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*min-height: 300px;
+	min-width: 300px;*/
 }
-@media only screen and (min-width: 680px) {
+
+.somostitulo > img {
+	width: 100%;
+}
+
+.somosparrafo {
+	/*min-height: 376.5px;*/
+	font-size: 1.2em;
+	width: 100%;
+	position: relative;
+	height: 100vw;
+}
+
+p {
+	font-weight: 600!important;
+}
+
+.somosparrafo > p {
+	margin: 0;
+	position: absolute;
+	min-width: 300px;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/* INICIO CSS GRID*/
+
+.somos {
+	position: relative;
+	display: grid;
+	grid-template-areas:
+     "somostitulo1"
+     "somosparrafo1"
+     "somostitulo2"
+     "somosparrafo2"
+     "somostitulo3"
+     "somosparrafo3";
+}
+
+
+@media (min-width: 768px) {
 	.somos {
-	   grid-template-columns: (1fr 1fr);
-	   grid-template-rows: repeat(2 50vw);
-	   grid-template-areas:
+		grid-template-areas:
 	     "somostitulo1 somosparrafo1"
 	     "somosparrafo2 somostitulo2"
 	     "somostitulo3 somosparrafo3";
 	}
 	.somosparrafo {
-	min-height: 300px;
-	padding: ;
-}
-
-}
-
-@media only screen and (min-width: 1800px) {
-	.somos {
-		grid-template-columns: repeat(6, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-		grid-template-areas:
-	    	"somostitulo1 somosparrafo1 somostitulo2 somosparrafo2 somostitulo3 somosparrafo3";
+		font-size: 1.2em;
+		height: 48vw;
 	}
+}
+
+@media (min-width: 920px) {
 	.somosparrafo {
-
+		font-size: 1.3em;
 	}
 }
+
+@media (min-width: 1800px) {  
+   .somos {
+		grid-template-areas:
+	     "somostitulo1 somosparrafo1 somostitulo2 somosparrafo2 somostitulo3 somosparrafo3";
+	}
+
+	.somosparrafo {
+		width: 16.6vw;
+		font-size: 1em;
+		max-height: 300px;
+	}
+
+	
+}
+
+/* FIN CSS GRID*/
+/*FIN SECCION SOMOS*/
+
+
 
