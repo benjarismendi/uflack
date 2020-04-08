@@ -1,5 +1,6 @@
 body, html {
-	font-family: 'Baloo Da 2', cursive;
+	font-family: 'Open Sans', sans-serif;
+	color: #939598;
 	background-color: rgb(245, 245, 245);
 	margin: 0;
 	font-size: 100%;
@@ -9,13 +10,21 @@ body, html {
 }
 /*NAVBAR*/
 
+.bg-light {
+    background-color: rgb(245, 245, 245)!important;
+}
+
+.navbar {
+	position: fixed top;
+}
+
 .navbar-brand > img {
 	position: center;
-	max-width: 200px;
+	max-height: 60px;
 }
 
 .buffer {
-	height: 100px;
+	height: 86px;
 }
 
 .nav-link {
@@ -52,14 +61,15 @@ body, html {
 	grid-area: somosparrafo3;
 }
 
-.somostitulo {
+/*.somostitulo {
+	height: 
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*min-height: 300px;
-	min-width: 300px;*/
+	min-height: 300px;
+	min-width: 300px;
 }
-
+*/
 .somostitulo > img {
 	width: 100%;
 }
@@ -67,13 +77,10 @@ body, html {
 .somosparrafo {
 	/*min-height: 376.5px;*/
 	font-size: 1.2em;
+	font-weight: 500;
 	width: 100%;
 	position: relative;
 	height: 100vw;
-}
-
-p {
-	font-weight: 600!important;
 }
 
 .somosparrafo > p {
@@ -112,6 +119,13 @@ p {
 		font-size: 1.2em;
 		height: 48vw;
 	}
+	.navbar-brand > img {
+	position: center;
+	max-height: 100px;
+	}
+	.buffer {
+	height: 126px;
+	}
 }
 
 @media (min-width: 920px) {
@@ -127,9 +141,9 @@ p {
 	}
 
 	.somosparrafo {
-		width: 16.6vw;
+		width: 16.666vw;
 		font-size: 1em;
-		max-height: 300px;
+		height: 16.666vw;
 	}
 
 	
@@ -138,5 +152,45 @@ p {
 /* FIN CSS GRID*/
 /*FIN SECCION SOMOS*/
 
+/*SECCION SERVICIOS*/
 
+.card-deck {
+	margin-right: 5px;
+	margin-left: 5px;
+}
 
+li > img {
+	margin: -80px -80px -80px -80px;
+}
+
+@media (min-width: 570px) {
+	li > img {
+		margin: 0px;
+	}
+}
+
+@media (min-width: 920px) {
+	li > img {
+		margin: -40px -40px -40px -40px;
+	}
+}
+
+@media (min-width: 1400px) {
+	li > img {
+		margin: -80px -80px -80px -80px;
+	}
+}
+
+.card-text h2 {
+	color: #41998C;
+	font-weight: 800;
+}
+
+.card-text h3 {
+	font-weight: 600;
+	padding-top: 20px;
+}
+
+li {
+	font-size: 1.2em;
+}
