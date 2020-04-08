@@ -188,6 +188,9 @@ li > img {
 	li > img {
 		margin: -40px -40px -40px -40px;
 	}
+	.card-deck {
+		margin: 0px 15%;
+	}
 }
 
 @media (min-width: 1400px) {
