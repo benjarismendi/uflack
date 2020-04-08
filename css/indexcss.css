@@ -3,7 +3,7 @@ body, html {
 	color: #939598;
 	background-color: rgb(245, 245, 245);
 	margin: 0;
-	font-size: 100%;
+	font-size: 90%;
 	font-weight: 400;
 	height: 100%;
 	width: 100%;
@@ -156,6 +156,10 @@ body, html {
 #servicios h6 {
 	margin-top: 50px;
 	}
+	
+.card {
+		border: none;
+	}
 
 .card-deck {
 	margin-right: 5px;
@@ -173,9 +177,7 @@ li > img {
 }
 
 @media (max-width: 570px){
-	.card {
-		border: none;
-	}
+	
 	#servicios h6 {
 	margin-top: 0px;
 	}
