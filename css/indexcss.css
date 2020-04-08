@@ -153,6 +153,9 @@ body, html {
 /*FIN SECCION SOMOS*/
 
 /*SECCION SERVICIOS*/
+#servicios h6 {
+	margin-top: 50px;
+	}
 
 .card-deck {
 	margin-right: 5px;
@@ -166,6 +169,15 @@ li > img {
 @media (min-width: 570px) {
 	li > img {
 		margin: 0px;
+	}
+}
+
+@media (max-width: 570px){
+	.card {
+		border: none;
+	}
+	#servicios h6 {
+	margin-top: 0px;
 	}
 }
 
