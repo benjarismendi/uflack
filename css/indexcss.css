@@ -85,6 +85,7 @@ body, html {
 
 .somosparrafo > p {
 	margin: 0;
+	padding: 0px 5%;
 	position: absolute;
 	min-width: 300px;
 	top: 50%;
@@ -156,7 +157,7 @@ body, html {
 #servicios h6 {
 	margin-top: 50px;
 	}
-	
+
 .card {
 		border: none;
 	}
